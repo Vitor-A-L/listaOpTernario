@@ -10,11 +10,16 @@
     // Verifique se o usuário ganha mais do que recebe e apresente em tela, indicando quanto que sobrou após o pagamento das contas ou quanto que faltou para poder pagar todas as contas previstas.
 
     //Entrada
-
-
+    const contaagua = Number(prompt("Qual é o valor da conta de água?"));
+    const contaenergia = Number(prompt("Qual é o valor da conta de energia elétrica?"));
+    const contatelefone = Number(prompt("Qual é o valor da conta de telefone?"));
+    const supermercado = Number(prompt("Qual é o valor do supermercado?"));
+    const salario = Number(prompt("Qual é o valor do seu salário?"));
     //Processamento
+    (contaagua + contaenergia + contatelefone + supermercado) <= salario ?
+        alert(`Você sobrou R$ ${(salario - (contaagua + contaenergia + contatelefone + supermercado)).toFixed(2)} após pagar todas as contas.`) :
+        alert(`Você faltou R$ ${((contaagua + contaenergia + contatelefone + supermercado) - salario).toFixed(2)} para pagar todas as contas.`);
 
-    
     //Saída
-    
+
 </script>

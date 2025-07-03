@@ -10,11 +10,19 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-
-
+    const nota = Number(prompt("Qual é a sua nota?(Entre 0 à 10)"));
     //Processamento
+    (nota <= 5.9) ?
+        alert(`Você tirou nota E`) :
+        (nota <= 6.9) ?
+            alert(`Você tirou nota D`) :
+            (nota <= 7.9) ?
+                alert(`Você tirou nota C`) :
+                (nota <= 8.9) ?
+                    alert(`Você tirou nota B`) :
+                    (nota >= 9 && nota <= 10) ?
+                        alert(`Você tirou nota A`) :
+                        alert(`Nota inválida! Digite uma nota entre 0 e 10.`);
 
-    
     //Saída
-
 </script>
