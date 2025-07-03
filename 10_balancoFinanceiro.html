@@ -16,8 +16,8 @@
     const supermercado = Number(prompt("Qual é o valor do supermercado?"));
     const salario = Number(prompt("Qual é o valor do seu salário?"));
     //Processamento
-    (contaagua + contaenergia + contatelefone + supermercado) <= salario ?
-        alert(`Você sobrou R$ ${(salario - (contaagua + contaenergia + contatelefone + supermercado)).toFixed(2)} após pagar todas as contas.`) :
+    (contaagua + contaenergia + contatelefone + supermercado) <= salario?
+        alert(`Você sobrou R$ ${(salario - (contaagua + contaenergia + contatelefone + supermercado)).toFixed(2)} após pagar todas as contas.`):
         alert(`Você faltou R$ ${((contaagua + contaenergia + contatelefone + supermercado) - salario).toFixed(2)} para pagar todas as contas.`);
 
     //Saída

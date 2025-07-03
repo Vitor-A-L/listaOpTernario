@@ -12,10 +12,10 @@
     const valorHora = Number(prompt("Qual é o valor que você recebe por hora trabalhada?"));
 
     //Processamento
-    (horasTrabalhadas <= 45) ?
-        alert(`Seu salário semanal é R$ ${horasTrabalhadas * valorHora}`) :
-        (horasTrabalhadas <= 60) ?
-            alert(`Seu salário semanal é R$ ${horasTrabalhadas * valorHora * 1.2}`) :
+    (horasTrabalhadas <= 45)?
+        alert(`Seu salário semanal é R$ ${horasTrabalhadas * valorHora}`):
+        (horasTrabalhadas <= 60)?
+            alert(`Seu salário semanal é R$ ${horasTrabalhadas * valorHora * 1.2}`):
             alert(`Seu salário semanal é R$ ${horasTrabalhadas * valorHora * 1.3}`);
     //Saída
 

@@ -10,12 +10,12 @@
     //Entrada
     let preco = Number(prompt("Qual é o valor do produto?(Só números)"));
     //Processamento
-    preco <= 280 ?
-        (preco += preco * 0.20) :
+    preco <= 280?
+        (preco += preco * 0.20):
         preco <= 700 ?
-            (preco += preco * 0.15) :
+            (preco += preco * 0.15):
             preco <= 1500 ?
-                (preco += preco * 0.10) :
+                (preco += preco * 0.10):
                 (preco += preco * 0.05)
     //Saída
     alert(`O valor com o aumento fica ${preco.toFixed(2)}`);
